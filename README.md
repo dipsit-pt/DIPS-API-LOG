@@ -23,7 +23,7 @@ A reusable logger and log summary updater for Node.js projects. This package pro
 - Add this package to your project directly from GitHub:
 
   ```bash
-  pnpm add git+https://github.com/[github_name]/DIPS-API-LOG.git
+  pnpm add git+ssh://git@github.com/[github_name]/DIPS-API-LOG.git
   ```
 
 - This command will:
