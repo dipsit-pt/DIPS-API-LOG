@@ -1,5 +1,5 @@
 {
-  "name": "DIPS-API-LOG",
+  "name": "@dips/api-log",
   "version": "1.0.0",
   "description": "Reusable logger and summary updater for APIs",
   "main": "index.js",

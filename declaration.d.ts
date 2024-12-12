@@ -1,1 +1,1 @@
-declare module "DIPS-API-LOG";
+declare module "@dips/api-log";
