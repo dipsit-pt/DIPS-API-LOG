@@ -90,7 +90,7 @@ If you can't access the repository because it's private, follow these steps to c
 ### Import the Logger and Summary Updater
 
 ```bash
-import { log, updateSummaryFile } from "@your-username/api-log";
+import { log, updateSummaryFile } from "@[dependency-name]";
 ```
 
 ### Log Messages
