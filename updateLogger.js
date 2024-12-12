@@ -6,7 +6,7 @@ const summaryFilePath = path.join(logDir, "summary.log");
 
 // Function to count log levels in a file
 const countLogLevels = async (filePath) => {
-  const counts = { errors: 0, info: 0, total: 0 };
+  const counts = { errors: 0, info: 0, warn: 0, total: 0 };
 
   try {
     const logData = await fs.readFile(filePath, "utf-8");
