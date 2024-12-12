@@ -30,7 +30,7 @@ const countLogLevels = async (filePath) => {
 export const updateSummaryFile = async () => {
   try {
     const logFiles = (await fs.readdir(logDir)).filter(
-      (file) => file.endsWith(".log") && file !== "SummaryFile.log"
+      (file) => file.endsWith(".log") && file !== "summary.log"
     );
 
     let summaryData = { updatedAt: new Date().toISOString(), logs: [] };
