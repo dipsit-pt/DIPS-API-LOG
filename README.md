@@ -23,67 +23,13 @@ A reusable logger and log summary updater for Node.js projects. This package pro
 - Add this package to your project directly from GitHub:
 
   ```bash
-  pnpm add git+ssh://git@github.com/[github_name]/DIPS-API-LOG.git
+  pnpm add https://github.com/dipsit-pt/DIPS-API-LOG.git
   ```
 
 - This command will:
 
 1. Install the `DIPS-API-LOG` package.
 2. Automatically install all required dependencies (e.g., `winston`, `winston-daily-rotate-file`)
-
-## 🔐 Setting up SSH for Private Repositories
-
-If you can't access the repository because it's private, follow these steps to configure SSH access:
-
-### 1️⃣ Check if SSH is set up on your machine
-
-- Run this command to see if you already have an SSH key:
-  ```bash
-  ls -al ~/.ssh
-  ```
-- Look for files like `id_rsa` or `id_ed25519`. If none exist, move to step 2.
-
-### 2️⃣ Generate a new SSH key (if needed)
-
-- Run this command (replace `your_email@example.com` with your GitHub email):
-  ```bash
-  ssh-keygen -t ed25519 -C "your_email@example.com"
-  ```
-- Press **Enter** to accept the default location for the key.
-
-### 3️⃣ Add your SSH key to the SSH agent
-
-- Run the following commands:
-  ```bash
-  eval "$(ssh-agent -s)"
-  ssh-add ~/.ssh/id_ed25519
-  ```
-
-### 4️⃣ Add the SSH key to GitHub
-
-- Copy your SSH key to the clipboard:
-  ```bash
-  cat ~/.ssh/id_ed25519.pub
-  ```
-- Go to **GitHub > Settings > SSH and GPG keys > New SSH key**, and paste the key.
-
-### 5️⃣ Test your SSH connection
-
-- Run this command to test the connection:
-  ```bash
-  ssh -T git@github.com
-  ```
-- You should see:
-  ```
-  Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
-  ```
-
-### 6️⃣ Reinstall the package
-
-- Run the installation command again:
-  ```bash
-  pnpm add git+ssh://git@github.com/[github_name]/DIPS-API-LOG.git
-  ```
 
 ## 💻 Usage
 
